@@ -1,0 +1,192 @@
+html{
+    scroll-behavior: smooth;
+}
+
+
+body {
+  scroll-behavior: smooth;
+  margin: 0;
+  background-color: #0f0f14;
+  font-family: 'Courier New', monospace;
+  color: white;
+}
+
+/* .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 20px;
+
+} */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #0f0f14;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px; /* was 30px 20px */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* optional, looks clean */
+}
+
+.navbar ul{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-right: 15px;
+  padding: 0;
+  gap: 30px;
+  
+
+}
+
+.navbar a{
+    color: white;
+    text-decoration: none; /* Gets rid of underlined text*/
+    font-weight: 500;
+    transition: color 0.3s , border-bottom 0.3s;
+}
+
+nav a.active {
+  color: #ffdb70;
+  border-bottom: 2px solid #ffdb70;
+}
+
+.title{
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 50px 40px;
+  justify-content: center;
+  gap: 100px;
+}
+
+.hero-text{
+    max-width: 600px;
+}
+
+.hero-text .subtitle {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  line-height: 1.1;
+}
+
+.hero-text h1 span {
+  color: #ffdb70;
+}
+
+.hero-text .desc {
+  margin-top: 20px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #aaa;
+}
+
+.download-button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 24px;
+  border: 3px solid #ffdb70;
+  color: #ffdb70;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+.download-button:hover{
+  background-color: #ffdb70;
+  color: #0f0f14;
+
+}
+
+.social-icons {
+  margin-top: 30px;
+}
+
+.social-icons a {
+  margin-right: 15px;
+  font-size: 1.5rem;
+  color: #ffdb70;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffffff;
+}
+
+.hero-image{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    border: 5px solid #ffdb70;
+    border-radius: 50%;
+
+}
+
+.hero-image img{
+    width: 100%;
+    height: auto;
+    margin-left: 10px;
+}
+
+
+
+section {
+  padding: 100px 40px;
+  min-height: 100vh; 
+  border-top: 1px solid #333;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #ffdb70;
+}
+
+
+
+
+/* PROJECTS */
+
+
+#projects {
+  padding: 100px 40px;
+}
+
+.projects-heading h2{
+  text-align: center;
+}
+
+.project-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #1a1a1a;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 40px;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+}
+
